@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.paymentchain.infraestructuradomain</groupId>
+        <artifactId>infraestructuradomain</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>adminserver</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>adminserver</name>
+    <description>Servidor central apra la administracion de todos los microservicios</description>
+    <properties>
+        <spring-boot-admin.version>2.7.5</spring-boot-admin.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <!--Nos permite tener toda configuracion y funcionalidad de un dashboard funcional-->
+             <groupId>de.codecentric</groupId>
+             <artifactId>spring-boot-admin-starter-server</artifactId>
+             <version>${spring-boot-admin.version}</version>
+        </dependency>
+        <!--Hay dos formas que todos los microservicios se puedan ver en  este servidor de administracion
+            1.-Primera es ir a cada uno de los microsevicios y hacer una implementacion para que se conecte al servidor
+            2.-Aprovechar el servidor que tenemos ya de registro y Discovery
+        -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

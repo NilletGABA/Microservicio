@@ -1,0 +1,23 @@
+CUSTOMER JAR:
+C:\Users\Nillet Gamboa\IdeaProjects\Microservicio\paymentchain\businessdomain\customer\target\customer-0.0.1-SNAPSHOT.jar
+
+PRODUCT JAR:
+C:\Users\Nillet Gamboa\IdeaProjects\Microservicio\paymentchain\businessdomain\product\target\product-0.0.1-SNAPSHOT.jar
+
+TRANSACTIONS:
+C:\Users\Nillet Gamboa\IdeaProjects\Microservicio\paymentchain\businessdomain\transactions\target\transactions-0.0.1-SNAPSHOT.jar
+
+Infraestructuradomain
+EUREKASERVER:
+C:\Users\Nillet Gamboa\IdeaProjects\Microservicio\paymentchain\infraestructuradomain\eureka\target\eurekaserver-0.0.1-SNAPSHOT.jar
+
+ADMINSERVER
+C:\Users\Nillet Gamboa\IdeaProjects\Microservicio\paymentchain\infraestructuradomain\adminServer\target\adminserver-0.0.1-SNAPSHOT.jar
+
+
+PAYMENTCHAINPARENT JAR:(Transaction)
+C:\Users\Nillet Gamboa\IdeaProjects\Microservicio\paymentchain\infraestructuradomain\adminServer\target\adminserver-0.0.1-SNAPSHOT.jar
+
+
+ConfigServer:
+C:\Users\Nillet Gamboa\IdeaProjects\Microservicio\paymentchain\infraestructuradomain\configServer\target\configServer-0.0.1-SNAPSHOT.jar
